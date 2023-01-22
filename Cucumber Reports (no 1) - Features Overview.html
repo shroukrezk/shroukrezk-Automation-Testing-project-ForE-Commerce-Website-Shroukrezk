@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<!-- saved from url=(0244)http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/overview-features.html?_ijt=9icp7j8u1259c9vk61fva0at5e&_ij_reload=RELOAD_ON_SAVE -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<script src="./Cucumber Reports (no 1) - Features Overview_files/jquery.min.js"></script>
+<script src="./Cucumber Reports (no 1) - Features Overview_files/jquery.tablesorter.min.js"></script>
+<script src="./Cucumber Reports (no 1) - Features Overview_files/Chart.min.js"></script><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
+<script src="./Cucumber Reports (no 1) - Features Overview_files/moment.min.js"></script>
+<script src="./Cucumber Reports (no 1) - Features Overview_files/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="./Cucumber Reports (no 1) - Features Overview_files/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="./Cucumber Reports (no 1) - Features Overview_files/cucumber.css" type="text/css">
+<link rel="stylesheet" href="./Cucumber Reports (no 1) - Features Overview_files/font-awesome.min.css">
+<link rel="shortcut icon" href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/images/favicon.png">
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Features Overview</title>
+
+
+  <script>
+$(document).ready(function() {
+
+    var chartData = {
+        datasets: [{
+            data: [
+                72,
+                2,
+                0,
+                0,
+                0
+            ],
+            backgroundColor: [
+                "#00B000",
+                "#FF3030",
+                "#88AAFF",
+                "#F5F28F",
+                "#F5B975"
+            ]
+        }],
+        labels: [
+            "Passed",
+            "Failed",
+            "Skipped",
+            "Pending",
+            "Undefined"
+        ]
+    };
+
+    var context = document.getElementById("steps-chart");
+    window.myBar = new Chart(context, {
+        type: "doughnut",
+        data: chartData,
+        options: {
+            title: {
+                display: true,
+                fontSize: 20,
+                text: "Steps"
+            },
+            responsive: true,
+            legend: {
+                display: false
+            },
+            tooltips: {
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var allData = data.datasets[tooltipItem.datasetIndex].data;
+                        var tooltipLabel = data.labels[tooltipItem.index];
+                        var tooltipData = allData[tooltipItem.index];
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 74) / 100;
+                        return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
+                    }
+                }
+            }
+        }
+    });
+
+});$(document).ready(function() {
+
+    var chartData = {
+        datasets: [{
+            data: [
+                17,
+                2
+            ],
+            backgroundColor: [
+                "#00B000",
+                "#FF3030"
+            ]
+        }],
+        labels: [
+            "Passed",
+            "Failed"
+        ]
+    };
+
+    var context = document.getElementById("scenarios-chart");
+    window.myBar = new Chart(context, {
+        type: "doughnut",
+        data: chartData,
+        options: {
+            title: {
+                display: true,
+                fontSize: 20,
+                text: "Scenarios"
+            },
+            responsive: true,
+            legend: {
+                display: false
+            },
+            tooltips: {
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var allData = data.datasets[tooltipItem.datasetIndex].data;
+                        var tooltipLabel = data.labels[tooltipItem.index];
+                        var tooltipData = allData[tooltipItem.index];
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 19) / 100;
+                        return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
+                    }
+                }
+            }
+        }
+    });
+
+});$(document).ready(function() {
+
+    var chartData = {
+        datasets: [{
+            data: [
+                   6,
+                   2
+               ],
+               backgroundColor: [
+                "#00B000",
+                "#FF3030"
+            ]
+        }],
+        labels: [
+            "Passed",
+            "Failed"
+        ]
+    };
+
+    var context = document.getElementById("features-chart");
+    window.myBar = new Chart(context, {
+        type: "doughnut",
+        data: chartData,
+        options: {
+            title: {
+                display: true,
+                fontSize: 20,
+                text: "Features"
+            },
+            responsive: true,
+            legend: {
+                display: false
+            },
+            tooltips: {
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        var allData = data.datasets[tooltipItem.datasetIndex].data;
+                        var tooltipLabel = data.labels[tooltipItem.index];
+                        var tooltipData = allData[tooltipItem.index];
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
+                        return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
+                    }
+                }
+            }
+        }
+    });
+
+});  </script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" class="active"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/overview-features.html">Features</a></li>
+        <li role="presentation"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/overview-tags.html">Tags</a></li>
+        <li role="presentation"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/overview-steps.html">Steps</a></li>
+        <li role="presentation"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>22 Jan 2023, 04:25</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Features Statistics</h2>
+      <p>The following graphs show passing and failing statistics for features</p>
+  </div>
+</div>
+
+
+  <div class="container-fluid" id="charts">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div id="featureChartCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#featureChartCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#featureChartCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#featureChartCarousel" data-slide-to="2" class=""></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item"><div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+              <canvas id="features-chart" height="564" width="1410" style="display: block; width: 1410px; height: 564px;" class="chartjs-render-monitor"></canvas>
+            </div>
+
+            <div class="item active"><div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+              <canvas id="scenarios-chart" height="564" style="display: block; width: 1410px; height: 564px;" class="chartjs-render-monitor" width="1410"></canvas>
+            </div>
+
+            <div class="item"><div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+              <canvas id="steps-chart" height="564" style="display: block; width: 1410px; height: 564px;" class="chartjs-render-monitor" width="1410"></canvas>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/overview-features.html?_ijt=9icp7j8u1259c9vk61fva0at5e&amp;_ij_reload=RELOAD_ON_SAVE#featureChartCarousel" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/overview-features.html?_ijt=9icp7j8u1259c9vk61fva0at5e&amp;_ij_reload=RELOAD_ON_SAVE#featureChartCarousel" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+<table id="tablesorter" class="stats-table table-hover tablesorter tablesorter-default" role="grid">
+
+<thead>
+  <tr class="header dont-sort" role="row">
+      <th data-column="0"></th>
+    <th colspan="6" data-column="1">Steps</th>
+    <th colspan="3" data-column="7">Scenarios</th>
+    <th colspan="2" data-column="10">Features</th>
+  </tr>
+  <tr role="row" class="tablesorter-headerRow">
+    <th data-column="0" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Feature: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Feature</div></th>
+    <th class="passed tablesorter-header tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Passed: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Passed</div></th>
+    <th class="failed tablesorter-header tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Failed: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Failed</div></th>
+    <th class="skipped tablesorter-header tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Skipped: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Skipped</div></th>
+    <th class="pending tablesorter-header tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Pending: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Pending</div></th>
+    <th class="undefined tablesorter-header tablesorter-headerUnSorted" data-column="5" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Undefined: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Undefined</div></th>
+    <th class="total tablesorter-header tablesorter-headerUnSorted" data-column="6" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Total: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Total</div></th>
+
+    <th class="passed tablesorter-header tablesorter-headerUnSorted" data-column="7" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Passed: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Passed</div></th>
+    <th class="failed tablesorter-header tablesorter-headerUnSorted" data-column="8" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Failed: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Failed</div></th>
+    <th class="total tablesorter-header tablesorter-headerUnSorted" data-column="9" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Total: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Total</div></th>
+
+    <th data-column="10" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Duration: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Duration</div></th>
+    <th data-column="11" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Status: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Status</div></th>
+  </tr>
+</thead>
+
+
+  <tbody aria-live="polite" aria-relevant="all">
+      <tr role="row">
+        <td class="tagname"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/report-feature_2543890845.html">F01_Register  users could register with new accounts</a></td>
+
+        <td class="passed">14</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td class="total">14</td>
+
+        <td class="passed">1</td>
+        <td>0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="3627226000">3.627</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr role="row">
+        <td class="tagname"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/report-feature_1_2673032606.html">users could login with registered valid email and password</a></td>
+
+        <td class="passed">9</td>
+        <td class="failed">1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td class="total">10</td>
+
+        <td class="passed">1</td>
+        <td class="failed">1</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="13281627000">13.281</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr role="row">
+        <td class="tagname"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/report-feature_2_1456797511.html">usingCurrencies</a></td>
+
+        <td class="passed">10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td class="total">10</td>
+
+        <td class="passed">1</td>
+        <td>0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="30909823000">30.909</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr role="row">
+        <td class="tagname"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/report-feature_3_2446315007.html">F04_Search. feature  Users will be able to search for products with different parameters</a></td>
+
+        <td class="passed">18</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td class="total">18</td>
+
+        <td class="passed">6</td>
+        <td>0</td>
+        <td class="total">6</td>
+
+        <td class="duration" data-value="6170058000">6.170</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr role="row">
+        <td class="tagname"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/report-feature_4_2801372496.html">this feature user will hover on main category and choose subcategory</a></td>
+
+        <td class="passed">2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td class="total">2</td>
+
+        <td class="passed">1</td>
+        <td>0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="1536262000">1.536</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr role="row">
+        <td class="tagname"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/report-feature_5_3922253228.html">user choose between two sliders</a></td>
+
+        <td class="passed">6</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td class="total">6</td>
+
+        <td class="passed">2</td>
+        <td>0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="4139250000">4.139</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr role="row">
+        <td class="tagname"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/report-feature_6_2037800387.html">F07_followUs|users could open followUs links</a></td>
+
+        <td class="passed">7</td>
+        <td class="failed">1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td class="total">8</td>
+
+        <td class="passed">3</td>
+        <td class="failed">1</td>
+        <td class="total">4</td>
+
+        <td class="duration" data-value="20956689000">20.956</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr role="row">
+        <td class="tagname"><a href="http://localhost:63342/shroukrezk-Automation-Testing-project-ForE-Commerce-Website-Shroukrezk/project-ForE-Commerce-Website-Shroukrezk/target/cucumber-html-reports/report-feature_7_1470440856.html"></a></td>
+
+        <td class="passed">6</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td class="total">6</td>
+
+        <td class="passed">2</td>
+        <td>0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="6287866000">6.287</td>
+        <td class="passed">Passed</td>
+      </tr>
+  </tbody>
+
+  <tfoot class="total">
+    <tr role="row">
+      <td data-column="0"></td>
+      <td data-column="1">72</td>
+      <td data-column="2">2</td>
+      <td data-column="3">0</td>
+      <td data-column="4">0</td>
+      <td data-column="5">0</td>
+      <td data-column="6">74</td>
+
+      <td data-column="7">17</td>
+      <td data-column="8">2</td>
+      <td data-column="9">19</td>
+
+      <td class="duration" data-column="10">1:26.908</td>
+      <td data-column="11">8</td>
+    </tr>
+    <tr role="row">
+      <td data-column="0"></td>
+      <td data-column="1">97.30%</td>
+      <td data-column="2">2.70%</td>
+      <td data-column="3">0.00%</td>
+      <td data-column="4">0.00%</td>
+      <td data-column="5">0.00%</td>
+      <td data-column="6"></td>
+      <td data-column="7">89.47%</td>
+      <td data-column="8">10.53%</td>
+      <td data-column="9"></td>
+      <td data-column="10"></td>
+      <td data-column="11">75.00%</td>
+    </tr>
+  </tfoot>
+</table>
+
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+
+
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host + 
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash 
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' + 
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body></html>
